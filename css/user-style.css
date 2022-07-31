@@ -1,0 +1,547 @@
+/*---------------- USER SIDE ---------------------*/
+
+/*-------------- PROFILE PAGE -----------------*/
+
+
+.right-container .profile-info{
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    margin-left: 300px;
+    background:#fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.profile-info .fa-user-circle{
+    font-size: 130px;
+    margin-top: 50px;
+    padding-left: 185px;
+    color: #222;
+}
+.profile-details{
+    width: 400px;
+    height: 300px;
+    margin: 50px;
+    background: #f2f2f2;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.20);
+}
+.profile-details input{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    width: 90%;
+    height: 30px; 
+    border: none; 
+    background: #f2f2f2;
+    border-bottom: 2px solid #222;  
+}
+.button{
+    width: 80%;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 40px;
+}
+.button .update{
+    width: 110px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #4a4a4a;
+    border: 2px solid #00bfff;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+.button .update .fa-edit{
+    color: #00bfff;
+    font-size: 18px;
+    margin-right: 5px;;
+}
+
+
+
+/*-------------- VIEW APPLICATIONS PAGE ------------------*/
+
+
+.application-info{
+    position: absolute;
+    padding: 70px 50px;
+    margin-top: 0px;
+    margin-left: 100px;
+    width: 900px;
+    height: 110%;
+    background: #fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+    overflow-y: scroll;
+}
+.application-info .certificate{
+    height: 400px;
+    width: 700px;
+    background: #f2f2f2;
+    margin-left: 50px;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 110px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.application-info .scheme{
+    height: 400px;
+    width: 700px;
+    background: #f2f2f2;
+    margin-left: 50px;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 110px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.status{
+    height: 300px;
+    width: 600px;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.status h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+    margin-right: 60px;
+}
+.status table{
+    width: 400px;
+    height: 100px;
+    color: #222;
+    margin-bottom: 60px;
+    margin-left: 50px;
+    padding-left: 20px;
+}
+.status .view{
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #00bfff;
+    border-radius: 20px;
+    padding: 5px 25px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+/*--------------- VIEW CERTIFICATES PAGES ---------------------*/
+
+.page{
+    width: 600px;
+    height: 700px;
+    background: #fff;
+    margin-left: 230px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.page .certificate{
+    width: 550px;
+    height: 650px;
+    margin: 25px;
+    border: 2px solid #222;
+}
+.page .certificate .head{
+    width: 320px;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    margin-left: 110px;
+}
+.page .certificate p{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+.page .certificate .p1{
+    width: 300px;
+    font-size: 23px;
+    font-weight: 400;
+    margin-left: 130px;
+    border-bottom: 2px dotted #222;
+}
+.page .certificate .p2{   
+    border-top: 2px solid #222;
+    width: 200px;
+    margin: 30px;
+    margin-top: 90px;
+    margin-left: 40px;
+    padding-top: 15px;
+    float: left;
+}
+.page .certificate .p3{
+    border-top: 2px solid #222;
+    width: 200px;
+    margin: 30px;
+    margin-top: 90px;
+    padding-top: 15px;
+    float: left;
+}
+
+
+/*--------------- FEEDBACK PAGE & ABOUT US PAGE -----------------*/
+
+
+.left-container{
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #00bfff;
+    
+}
+.left-container::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #00bfff;
+    
+}
+.right-container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+.right-container .contact-info{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #00bfff;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.15);
+}
+.right-container .contact-form{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.right-container .contact-form h2{
+    color: #00bfff;
+    font-size: 24px;
+    font-weight: 600;
+}
+.right-container .contact-form .form-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.right-container .contact-form .form-box .input-box{
+    position: relative;
+    color: #222;
+    margin-bottom: 35px;
+}
+.right-container .contact-form .form-box .input-box input,.right-container .contact-form .form-box .input-box textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #222;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #00bfff;
+}
+.right-container .contact-form .form-box .btn{
+    margin-top: 150px;
+    margin-right: 100px;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #222;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    background: #00bfff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+
+
+/*---------------- CERTIFICATES PAGE ------------------*/
+
+
+.main-page{
+    height: 600px;
+    width: 100%;
+    margin-top: 30px;
+    background:#fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.main-page .search{
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+.main-page .search h3{
+    color: #00bfff;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.main-page .search label{
+    color: #222;
+    padding-left: 70px;
+    padding-right: 10px;
+}
+.main-page .search select{
+    color: #222;
+    width: 200px;
+}
+.main-page .local-body-details{
+    background: #fff;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-top: 1px solid #222;
+    border-bottom:1px solid #222 ;
+}
+.main-page .local-body-details h3{
+    color: #00bfff;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.main-page .local-body-details p{
+    color: red;
+    padding-top: -15px;
+    text-align: center;
+    font-size: 15px;
+}
+.main-page .local-body-details label{
+    color: #222;
+    padding-left: 70px;
+    padding-right: 20px;
+} 
+.main-page .local-body-details select{
+    width: 200px;
+}
+.main-page .local-body-details .dis{
+    margin-left: 65px;
+}
+.main-page .local-body-details input{
+    width: 200px;
+    margin-left: 40px;
+}
+.main-page .local-body-details .district{
+    padding-right: 35px;
+}
+.main-page  h3{
+    text-align: center;
+    color: #00bfff;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.main-page .details{
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.main-page .details label{
+    color: #222; 
+}
+.main-page .details .input{
+    margin-left: 15px;
+}
+.main-page .details input{
+     margin-left: 40px;
+}
+.details .btn{
+    width: 130px;
+    height: 30px;
+    color: #222;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #00bfff;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+/*------------- SCHEME'S PAGE -----------------*/
+
+
+.content{
+    height: 600px;
+    width: 90%;
+    margin-left: 60px;
+    margin-top: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background:#fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.content .scheme1{
+    width: 700px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 150px;
+    padding-top: 20px;
+    padding-left: 80px;
+    border: 2px solid #222;
+
+}
+.content .scheme1 table{
+    width: 100%;
+    height: 80%;
+    color: #222;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.content .scheme1 a{
+    text-decoration: none;
+    font-size: 23px;
+    color: #222;
+    font-weight: 600;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    padding: 5px 25px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+/* --------------- APPLICATION PAGE ----------------------*/
+
+.application{
+    height: 600px;
+    width: 100%;
+    background:#fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.wrapper{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.wrapper h3{
+    color: #222;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.apply{
+    width: 600px;
+    height: 500px;
+    padding: 40px;
+    margin-left: 280px;
+    float: left;
+}
+.apply table{
+    color: #222;
+    width: 100%;
+    height: 60%;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.apply table tr{
+    padding-top: 20px;
+}
+.file-upload{
+    width: 450px;
+    height: 100px;
+    margin-top: 70px;
+    margin-left: 250px;
+    padding: 30px;
+    padding-left: 40px;
+    transform:translate(-50%,-50%);
+    position: absolute;
+}
+.file-input{
+    font-size: 18px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px #222;
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    padding-left: 10px ;
+    outline: none;
+}
+::-webkit-file-upload-button{
+    color: #4a4a4a;
+    background: #00bfff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0 1px 1px #6b4559;
+}
+::-webkit-file-upload-button:hover{
+    background: #222;
+    color: #00bfff;
+}
+.submit{
+    width: 100%;
+    height: 50px;
+    margin-top: 130px;
+    padding: 10px 190px;
+}
+.submit button{
+    width: 130px;
+    height: 30px;
+    color: #222;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #00bfff;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/*---------------SCROLL BAR---------------*/
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #00bfff;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #76e5fc;
+}

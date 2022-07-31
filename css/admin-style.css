@@ -1,0 +1,158 @@
+
+/*----------------------- ADMIN SIDE ------------------------------*/
+
+/*------------- BACKGROUND ----------------*/
+
+.left-container{
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #00bfff;
+}
+.left-container::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #00bfff;
+}
+.right-container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+
+/*-------------- PROFILE PAGE -----------------*/
+
+
+.right-container .profile-info{
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    margin-left: 300px;
+    background:#fff;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.profile-info .fa-user-secret{
+    font-size: 130px;
+    margin-top: 50px;
+    padding-left: 185px;
+    color: #404040;
+}
+.profile-details{
+    width: 400px;
+    height: 300px;
+    margin: 50px;
+    background: #f2f2f2;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.20);
+}
+.profile-details input{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    width: 90%;
+    height: 30px; 
+    border: none; 
+    background: #f2f2f2;
+    border-bottom: 2px solid #222;  
+}
+.button{
+    width: 80%;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 40px;
+}
+.button button{
+    width: 110px;
+    height: 30px;
+
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+    border: 2px solid #00bfff;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+}
+.button button .fa-edit{
+    color: #00bfff;
+    font-size: 18px;
+    margin-right: 5px;;
+}
+
+
+
+/*----------- INDEX PAGE -----------------*/
+
+.main{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.main h3{
+    color: #00bfff;
+    font-weight: 600;
+    font-size: 24px;
+
+}
+.main .cd{
+    list-style: outside;
+}
+.main .cd a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+.cer{
+    width: 500px;
+    height: 200px;
+    margin-left: 300px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background: #f2f2f2;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.sch{
+    width: 500px;
+    height: 150px;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background: #f2f2f2;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.cd{
+    padding: 20px;
+}
+
+
+/*---------------SCROLL BAR---------------*/
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #00bfff;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #76e5fc;
+}

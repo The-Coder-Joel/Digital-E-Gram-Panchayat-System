@@ -1,0 +1,124 @@
+
+/*----------------- BACKGROUND -------------------------------*/
+
+.left-container{
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #00bfff;
+}
+.left-container::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #00bfff;
+}
+.right-container{
+    position: relative;
+    min-width: 1500px;
+    min-height: 450px;
+    display: flex;
+    z-index: 1000;
+}
+
+/*----------------------- VIEW APPLICATION PAGES -------------------------*/
+
+.filter{
+    height: 600px;
+    width: 95%;
+    margin: 35px;
+    margin-top: 100px;
+    padding: 50px;
+    background: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+.filter table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    font-size: 0.9em;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.filter table tr{
+    text-align: left;
+}
+.filter table th{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #00bfff;
+    color: #222;
+    
+}
+.filter table th:first-child{
+    border-radius: 15px 0 0 0;
+}
+.filter table th:last-child{
+    border-radius: 0 15px 0 0;
+}
+.filter table tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+.filter table td{
+    padding: 5px;
+}
+.filter table tr td .id{
+    padding-left: 10px;
+    margin-left: 15px;
+    width: 60%;
+    height: 25px;
+}
+.filter table tr td h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.filter table tr td .status{
+    margin-left: 10px;
+    width: 50%;
+    height: 25px;
+    margin-bottom: 10px;
+    color: #222;
+}
+.filter table tr td .ok{
+    width: 50px;
+    height: 25px;
+    margin-left: 40px;
+    color: #222;
+    background: #fff;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+/*---------------SCROLL BAR---------------*/
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #00bfff;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #76e5fc;
+}
+

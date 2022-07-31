@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birth Certificate</title>
+    <link rel="stylesheet" href="../css/user-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .icon{
+            font-size: 20px;
+            text-decoration: none;
+            color: #f2f2f2;
+        }
+        .icon{
+            font-size: 30px;
+        }
+        .icon,.fa-chevron-circle-left{
+            font-size: 30px;
+            margin-top: 37px;
+            padding-top: 20px;
+            padding-left: 20px;
+        } 
+
+    </style>
+
+</head>
+<body>
+
+    <a class="icon" href="../user/index.php"><i class="fas fa-chevron-circle-left"></i> Back </a>    
+
+    <div class="left-container">
+        <div class="right-container">
+
+            <div class="main-page">
+
+                <div class="search">
+
+                    <h3> Certificate Search </h3> 
+
+                    <label>  Select Certificate : </label>  
+
+                    <select onchange="location=this.value">                
+                        <option value="../user/birth.html" selected="selected">Birth Certificate</option>
+                        <option value="../user/death.html">Death Certificate</option>
+                        <option value="../user/marriage.html">Marriage Certificate</option>	
+                    </select>
+
+                </div>
+
+                <form action="../process/birth.php" method="post">
+
+                    <div class="local-body-details">
+
+                        <h3> Localbody Details </h3>  <br>
+                        <p><u> Select the Localbody where the  event  has been registered.</u> </p> <br>
+
+                        <div class="district">
+
+                            <label> District  : </label>
+
+                            <select class="dis" name="district" required>
+                                <option value=""> -----Select-----      </option>
+                                <option value="Thiruvananthapuram"> Thiruvananthapuram	</option>
+                                <option value="Kollam"> Kollam	                        </option>
+                                <option value="Pathanamthitta"> Pathanamthitta    	    </option>
+                                <option value="Alappuzha"> Alappuzha                	</option>
+                                <option value="Kottayam"> Kottayam	                    </option>
+                                <option value="Idukki"> Idukki	                        </option>
+                                <option value="Ernakulam"> Ernakulam        	        </option>
+                                <option value="Thrissur"> Thrissur	                    </option>
+                                <option value="Palakkad"> Palakkad           	        </option>
+                                <option value="Malappuram"> Malappuram	                </option>
+                                <option value="Kozhikode"> Kozhikode        	        </option>
+                                <option value="Wayanad"> Wayanad          	            </option>
+                                <option value="Kannur"> Kannur	                        </option>
+                                <option value="Kasargode"> Kasargode        	        </option>                                                            
+                            </select> <br><br>
+
+                            <label> LocalBody Type : </label>
+
+                            <select name="localbodytype">
+                                <option value=""> -----Select------       </option>
+                                <option value="Grama Panchayat"> Grama Panchayat             </option>
+                                <option value="Block Panchayat"> Block Panchayat             </option>
+                                <option value="District Panchayat"> District Panchayat       </option>
+                                <option value=" Municipality"> Municipality                  </option>
+                                <option value="Municipal Corporation"> Municipal Corporation </option>
+                            </select>   <br><br>   
+
+                            <label> LocalBody : </label>            
+                                <input type="text" name="localbody">                    
+                        </div>
+
+                    </div>
+
+                    <h3> Information to Certificate </h3>   <br>
+
+                    <div class="details">      
+
+                        <label> Date Of Birth : </label>
+                        <input name="dob" type="date" required>  <br><br>
+
+                        <label> Gender : </label>   
+
+                        <input class="input" type="radio" name="gender" value="Male" >
+                        <label for="">Male</label>                              
+                        <input class="input" type="radio" name="gender" value="Female">
+                        <label for="">Female</label>                             
+                        <input class="input" type="radio" name="gender" value="Others">
+                        <label for="">Others</label> 
+
+                        <br><br>
+
+                        <label> Name of Child : </label>                                             
+                        <input name="child" type="text" required>  <br><br>
+
+                        <button class="btn" name="submit"> Submit </button> 
+
+                    </div>
+
+                </form>
+
+            </div>   
+
+        </div>
+    </div>   
+          
+</body>
+</html>
